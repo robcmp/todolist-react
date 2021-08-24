@@ -26,7 +26,9 @@ const TodoList = () => {
 
             <ul>
                 {
-                    addList.map((li, key) => <li key={key} >{li}</li>)
+                    addList.map((li, key) => <li key={key} onClick={() => {
+                        deleteTask(key);
+                    }}>{li}</li>)
                 }
             </ul>
 
