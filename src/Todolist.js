@@ -13,6 +13,10 @@ const TodoList = () => {
         setTask(e.target.value);
     }
 
+    const deleteTask = (key) => {
+        setList(addList.filter((item, index) => index !== key));
+    }
+
     return (
         <div>
             <div className="input-group mb-3">
